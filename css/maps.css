@@ -1,12 +1,26 @@
 html {
     /*background: #1a1a1a;*/
     /*background: #6b807f;*/
-    background-image: url(../images/bgvideo.mp4.jpg); 
+    background-image: url(https://c1.staticflickr.com/3/2841/9047408197_f73f58391c_b.jpg); 
+    background-position: center;
+    background-size: cover;
     color: #e5e5e5;
     text-align: center;
     font-family: "Roboto", Helvetica, sans-serif;
 }
 
+/*html:after {
+    content: "";
+    background: url(https://www.transparenttextures.com/patterns/black-orchid.png) repeat;
+    background: url(http://data.whicdn.com/images/138719647/original.png) repeat;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+}
+*/
 body {
     max-width: 1200px;
     margin: 20px auto;
@@ -141,12 +155,12 @@ a:active {
     opacity: 0.8;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    -moz-transition: opacity 0.25s ease-in-out 0.25s, width 0.25s ease-in-out 0.25s, height 0.25s ease-in-out 0.25s, z-index 0.25s ease-in-out 0.25s;
+    /*-moz-transition: opacity 0.25s ease-in-out 0.25s, width 0.25s ease-in-out 0.25s, height 0.25s ease-in-out 0.25s, z-index 0.25s ease-in-out 0.25s;
     -o-transition: opacity 0.25s ease-in-out 0.25s, width 0.25s ease-in-out 0.25s, height 0.25s ease-in-out 0.25s, z-index 0.25s ease-in-out 0.25s;
     -webkit-transition: opacity 0.25s ease-in-out, width 0.25s ease-in-out, height 0.25s ease-in-out, z-index 0.25s ease-in-out;
     -webkit-transition-delay: 0.25s, 0.25s, 0.25s, 0.25s;
     -webkit-transition: opacity 0.25s ease-in-out 0.25s, width 0.25s ease-in-out 0.25s, height 0.25s ease-in-out 0.25s, z-index 0.25s ease-in-out 0.25s;
-    transition: opacity 0.25s ease-in-out 0.25s, width 0.25s ease-in-out 0.25s, height 0.25s ease-in-out 0.25s, z-index 0.25s ease-in-out 0.25s;
+    transition: opacity 0.25s ease-in-out 0.25s, width 0.25s ease-in-out 0.25s, height 0.25s ease-in-out 0.25s, z-index 0.25s ease-in-out 0.25s;*/
     background: rgba(26, 26, 26, 0.85);
     border: 5px solid #7fcff7;
 }
@@ -168,14 +182,14 @@ a:active {
 .distribution-map .map-point:hover {
     margin: 0;
     padding: 0;
-    filter: progid: DXImageTransform.Microsoft.Alpha(enabled=false);
+    /*filter: progid: DXImageTransform.Microsoft.Alpha(enabled=false);*/
     opacity: 1;
-    width: 200px;
-    height: 354px;
+    /*width: 200px;
+    height: 354px;*/
     color: #e5e5e5;
     z-index: 1;
-    -webkit-transition: opacity 0.25s ease-in-out, width 0.25s ease-in-out, height 0.25s ease-in-out;
-    transition: opacity 0.25s ease-in-out, width 0.25s ease-in-out, height 0.25s ease-in-out;
+    /*-webkit-transition: opacity 0.25s ease-in-out, width 0.25s ease-in-out, height 0.25s ease-in-out;
+    transition: opacity 0.25s ease-in-out, width 0.25s ease-in-out, height 0.25s ease-in-out;*/
 }
 
 .distribution-map .map-point:active .content,

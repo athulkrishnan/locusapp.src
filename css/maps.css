@@ -1,7 +1,7 @@
 html {
     /*background: #1a1a1a;*/
-    /*background: #6b807f;*/
-    background-image: url(https://c1.staticflickr.com/3/2841/9047408197_f73f58391c_b.jpg); 
+    background: #000000;
+    /*background-image: url(https://c1.staticflickr.com/3/2841/9047408197_f73f58391c_b.jpg); */
     background-position: center;
     background-size: cover;
     color: #e5e5e5;
@@ -19,8 +19,9 @@ html {
     right: 0;
     position: absolute;
     z-index: -1;   
-}
-*/
+}*/
+
+
 body {
     max-width: 1200px;
     margin: 20px auto;

@@ -1135,3 +1135,33 @@ a.tooltip span
     transform: scale(0.9);
   }
 }
+
+/*Transition Effect*/
+/*.pictureContainer img {
+    transform: translate3d(0px, 0px, 0px);
+}
+.pictureContainer img:hover {
+    transform: translate3d(0px, -150px, 0px);
+}
+*/
+.pictureContainer img {
+    transform: translate3d(0px, 0px, 0px);
+    transition: transform .2s ease-in-out;
+}
+.pictureContainer img:hover {
+    transform: translate3d(0px, -150px, 0px);
+}
+
+.map-point::hover
+{
+    box-shadow: 0px 0px 150px #000000;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.5);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.5);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.5);
+    transition: all 200ms ease-in;
+    transform: scale(1.5);
+}

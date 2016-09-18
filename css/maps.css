@@ -9,17 +9,17 @@ html {
     font-family: "Roboto", Helvetica, sans-serif;
 }
 
-/*html:after {
+html:after {
     content: "";
-    background: url(https://www.transparenttextures.com/patterns/black-orchid.png) repeat;
-    background: url(http://data.whicdn.com/images/138719647/original.png) repeat;
+    background: url(../images/bgpattb.png) repeat;
+    /*background: url(http://data.whicdn.com/images/138719647/original.png) repeat;*/
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     position: absolute;
     z-index: -1;   
-}*/
+}
 
 
 body {

@@ -1,3 +1,8 @@
+/*Text BG Box*/
+bottomcontent {
+
+}
+
 html {
     /*background: #1a1a1a;*/
     background: #000000;
@@ -11,8 +16,9 @@ html {
 
 html:after {
     content: "";
-    background: url(../images/bgpattb.png) repeat;
-    /*background: url(http://data.whicdn.com/images/138719647/original.png) repeat;*/
+    /*background: url(../images/bgpattb.png) repeat;*/
+    /*background: url(https://www.transparenttextures.com/patterns/worn-dots.png) repeat;*/
+    background: url(../images/bgtrans.png) repeat;
     top: 0;
     left: 0;
     bottom: 0;

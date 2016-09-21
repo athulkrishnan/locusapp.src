@@ -1,28 +1,53 @@
-a.tooltip {outline:none; }
-a.tooltip strong {line-height:30px;}
-a.tooltip:hover {text-decoration:none;} 
-a.tooltip span {
-    z-index:10;display:none; padding:14px 20px;
-    margin-top:-30px; margin-left:28px;
-    width:300px; line-height:16px;
+a.tooltip {
+    outline: none;
 }
-a.tooltip:hover span{
-    display:inline; position:absolute; color:#111;
-    border:1px solid #DCA; background:#fffAF0;}
-.callout {z-index:20;position:absolute;top:30px;border:0;left:-12px;}
-    
+
+a.tooltip strong {
+    line-height: 30px;
+}
+
+a.tooltip:hover {
+    text-decoration: none;
+}
+
+a.tooltip span {
+    z-index: 10;
+    display: none;
+    padding: 14px 20px;
+    margin-top: -30px;
+    margin-left: 28px;
+    width: 300px;
+    line-height: 16px;
+}
+
+a.tooltip:hover span {
+    display: inline;
+    position: absolute;
+    color: #111;
+    border: 1px solid #DCA;
+    background: #fffAF0;
+}
+
+.callout {
+    z-index: 20;
+    position: absolute;
+    top: 30px;
+    border: 0;
+    left: -12px;
+}
+
+
 /*CSS3 extras*/
-a.tooltip span
-{
-    border-radius:4px;
+
+a.tooltip span {
+    border-radius: 4px;
     box-shadow: 5px 5px 8px #CCC;
 }
 
 
 /*Text BG Box*/
-bottomcontent {
 
-}
+bottomcontent {}
 
 html {
     /*background: #1a1a1a;*/
@@ -35,12 +60,26 @@ html {
     font-family: "Roboto", Helvetica, sans-serif;
 }
 
-html:after {
-background: red; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(red, yellow); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(red, yellow); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(red, yellow); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(red, yellow); /* Standard syntax */
+/*html:after {
+  background: #252525;
+  background: linear-gradient(180deg, rgba(37, 37, 37, 0.0000), rgba(37, 37, 37, 1));
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 50px;
+  content: " ";
+  position: absolute
+}
+*/
+
+.fullscreen-bg:after {
+background: linear-gradient(to top, rgba(37, 37, 37, 0.0000), rgba(37, 37, 37, 1));
+top: 0;
+left: 0;
+width:100%;
+height:100%;
+content: " ";
+position: absolute
 }
 
 /*html:after {
@@ -57,7 +96,6 @@ background: red; /* For browsers that do not support gradients */
     z-index: -1;   
 }*/
 
-
 body {
     max-width: 1200px;
     margin: 20px auto;
@@ -70,7 +108,10 @@ body {
     margin: 0 auto;
     color: rgba(229, 229, 229, 0.7);
 }
+
+
 /**/
+
 div,
 img,
 footer {
@@ -269,71 +310,81 @@ a:active {
 }
 
 .phone {
-  background: url("https://github.com/wojstu/CookingConnection/blob/4ee14ba85cb82dbfe803003d490a9c00705a0664/assets/images/dummie.png?raw=true") no-repeat;
-  position: relative;
-  display: block;
-  width: 326px;
-  height: 600px;
-  overflow: hidden;
-  margin: 0px auto;
-  top: 50px;
+    background: url("https://github.com/wojstu/CookingConnection/blob/4ee14ba85cb82dbfe803003d490a9c00705a0664/assets/images/dummie.png?raw=true") no-repeat;
+    position: relative;
+    display: block;
+    width: 326px;
+    height: 600px;
+    overflow: hidden;
+    margin: 0px auto;
+    top: 50px;
 }
+
 .screens {
-  position: absolute;
-  /*margin-left: 100%;*/
-  margin-left: -90%;
-  -webkit-animation-duration: 5s;
-  -webkit-animation-name: slidein;
-  animation-duration: 5s;
-  animation-name: slidein;
+    position: absolute;
+    /*margin-left: 100%;*/
+    margin-left: -90%;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-name: slidein;
+    animation-duration: 5s;
+    animation-name: slidein;
 }
+
 @-webkit-keyframes slidein {
-  0% {
-    margin-left: 100%;
-  }
-  20% {
-    margin-left: 0.001%;
-  }
-  100% {
-    margin-left: 0%;
-  }
+    0% {
+        margin-left: 100%;
+    }
+    20% {
+        margin-left: 0.001%;
+    }
+    100% {
+        margin-left: 0%;
+    }
 }
+
 @keyframes slidein {
-  0% {
-    margin-left: 100%;
-  }
-  20% {
-    margin-left: 0.001%;
-  }
-  100% {
-    margin-left: 0%;
-  }
+    0% {
+        margin-left: 100%;
+    }
+    20% {
+        margin-left: 0.001%;
+    }
+    100% {
+        margin-left: 0%;
+    }
 }
+
 img:nth-child(1) {
-  -webkit-animation-delay: 0s;
-  animation-delay: 0s;
-  z-index: -1;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    z-index: -1;
 }
+
 img:nth-child(2) {
-  -webkit-animation-delay: 5s;
-  animation-delay: 5s;
-  z-index: -1;
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
+    z-index: -1;
 }
+
 img:nth-child(3) {
-  -webkit-animation-delay: 10s;
-  animation-delay: 10s;
-  z-index: -1;
+    -webkit-animation-delay: 10s;
+    animation-delay: 10s;
+    z-index: -1;
 }
+
 img:nth-child(4) {
-  -webkit-animation-delay: 15s;
-  animation-delay: 15s;
-  z-index: -1;
+    -webkit-animation-delay: 15s;
+    animation-delay: 15s;
+    z-index: -1;
 }
+
 img:nth-child(5) {
-  -webkit-animation-delay: 20s;
-  animation-delay: 20s;
-  z-index: -1;
+    -webkit-animation-delay: 20s;
+    animation-delay: 20s;
+    z-index: -1;
 }
+
+
 /*.container {
   position: relative;
   width: 278px;
@@ -343,6 +394,7 @@ img:nth-child(5) {
   padding-right: 24px;
 }
 */
+
 .fullscreen-bg {
     position: fixed;
     top: 0;
@@ -351,6 +403,7 @@ img:nth-child(5) {
     left: 0;
     overflow: hidden;
     z-index: -100;
+    background-size: cover;
 }
 
 .fullscreen-bg__video {
@@ -359,11 +412,9 @@ img:nth-child(5) {
     left: 0;
     width: 100%;
     height: 100%;
+    background-size: cover;
 }
 
-.bottomcontent{
-  color: #000000;
+.bottomcontent {
+    color: #000000;
 }
-
-/*Tooltipster Theme*/
-.tooltipster-sidetip.tooltipster-punk .tooltipster-box{border-radius:5px;border:none;border-bottom:3px solid #f71169;background:#2a2a2a}.tooltipster-sidetip.tooltipster-punk.tooltipster-top .tooltipster-box{margin-bottom:7px}.tooltipster-sidetip.tooltipster-punk .tooltipster-content{color:#fff;padding:8px 16px}.tooltipster-sidetip.tooltipster-punk .tooltipster-arrow-background{display:none}.tooltipster-sidetip.tooltipster-punk.tooltipster-bottom .tooltipster-arrow-border{border-bottom-color:#2a2a2a}.tooltipster-sidetip.tooltipster-punk.tooltipster-left .tooltipster-arrow-border{border-left-color:#2a2a2a}.tooltipster-sidetip.tooltipster-punk.tooltipster-right .tooltipster-arrow-border{border-right-color:#2a2a2a}.tooltipster-sidetip.tooltipster-punk.tooltipster-top .tooltipster-arrow-border{border-top-color:#f71169}

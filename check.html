@@ -24,40 +24,39 @@
 </head>
 
 <body>
-    
-            <div class="fullscreen-bg">
-                <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
-                    <source src="https://rawgit.com/athulkrishnan/athulkrishnan.github.io/master/webcon/videobg-new.mp4" type="video/mp4">
-                    <!-- <source src="https://rawgit.com/athulkrishnan/athulkrishnan.github.io/master/webcon/bgvideo.mp4" type="video/mp4"> -->
-                </video>
-            </div>
-            <link href='//fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700' rel='stylesheet' type='text/css'>
-            <link href='//fonts.googleapis.com/css?family=Roboto:100
+    <div class="fullscreen-bg">
+        <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
+            <source src="https://rawgit.com/athulkrishnan/athulkrishnan.github.io/master/webcon/videobg-new.mp4" type="video/mp4">
+            <!-- <source src="https://rawgit.com/athulkrishnan/athulkrishnan.github.io/master/webcon/bgvideo.mp4" type="video/mp4"> -->
+        </video>
+    </div>
+    <link href='//fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Roboto:100
 ,300,400,700,900' rel='stylesheet' type='text/css'>
-            <h1 style="color: white; color: white;margin-bottom: 0px;margin-top: 0px;">L O C U S</h1>
-            <p class="description" style="margin-bottom: 20px;">Be Local Savvy</p>
-            <div class="wrap">
-                <div id="logo">
-                    <!-- <a href="index.html#"><img src="images/logo.png" alt=""> </a> -->
+    <h1 style="color: white; color: white;margin-bottom: 0px;margin-top: 0px;">L O C U S</h1>
+    <p class="description" style="margin-bottom: 20px;">Be Local Savvy</p>
+    <div class="wrap">
+        <div id="logo">
+            <!-- <a href="index.html#"><img src="images/logo.png" alt=""> </a> -->
+        </div>
+    </div>
+    <!-- END PAGE LOGO -->
+    <!-- LANDING PAGE CONTENT -->
+    <div id="fullpage">
+        <!-- RIGHT HAND & PHONE MOCK-UP IMAGES -->
+        <div class="wrap">
+            <div class="section-image">
+                <img id="phoneimage" src="images/splash.png" alt="About">
+            </div>
+            <div id="hand">
+                <div>
+                    <!--     <img src="images/08.jpg" alt="Contact"> -->
                 </div>
             </div>
-            <!-- END PAGE LOGO -->
-            <!-- LANDING PAGE CONTENT -->
-            <div id="fullpage">
-                <!-- RIGHT HAND & PHONE MOCK-UP IMAGES -->
-                <div class="wrap">
-                    <div class="section-image">
-                        <img id="phoneimage" src="images/splash.png" alt="About">
-                    </div>
-                    <div id="hand">
-                        <div>
-                            <!--     <img src="images/08.jpg" alt="Contact"> -->
-                        </div>
-                    </div>
-                </div>
-                <!-- END RIGHT HAND & PHONE MOCK-UP -->
-                <!-- SECTION HOME -->
-                <!--         <div class="section " id="section0">
+        </div>
+        <!-- END RIGHT HAND & PHONE MOCK-UP -->
+        <!-- SECTION HOME -->
+        <!--         <div class="section " id="section0">
             <div class="wrap">
                 <div class="box">
 
@@ -66,16 +65,26 @@
                 </div>
             </div>
         </div> -->
-                <!-- END SECTION HOME -->
-                <!-- SECTION FEATURES -->
-                <div id='outerDiv'>
-        <div id='inner1' style='z-index: 2'>
+        <!-- END SECTION HOME -->
+        <!-- SECTION FEATURES -->
+        <div id='outerDiv'>
+            <div id='inner1' style='z-index: 2'>
                 <div class="section " id="section1" style="position: static;">
                     <div class="wrap">
                         <div class="distribution-map walking" style="padding-bottom: 200px;">
                             <!-- This was broken for a while because imgur :( -->
                             <!-- I don't trust this host. Image here if it goes down: http://i.imgur.com/M7aUkuS.png -->
                             <img src="images/map.png" style="position: static;">
+                            <!--First tooltip-->
+                            <a href="#" class="tooltip">
+                                Tooltip
+                                <span>
+                                    <strong>Most Light-weight Tooltip</strong><br />
+                                    This is the easy-to-use Tooltip driven purely by CSS.
+                                </span>
+                            </a>
+                            
+                            </a>
                             <!--In the original application, these points are injected with Javascript, but ideally, they'd be injected with a haml loop. Because I'm hardcoding content, I'm presenting this as prerendered HTML-->
                             <!-- <img src="http://www.brainpecks.com/wp-content/uploads/2014/02/loading-1.gif" class="map-point" style="top:25%;left:35%">  -->
                             <!-- image loader -->
@@ -94,80 +103,81 @@
                             <!-- image loader -->
                         </div>
                     </div>
-                    </div>
-                </div>
-                <!-- END SECTION FEATURES -->
-                <div id='inner2' style='z-index: 1'>
-                    <h4 id="bottomcontent" style="color: white; padding-top: 500px; font-size:20px">
-                        LOCAL. REALTIME. CROWDSOURCED.
-                    </h4>
                 </div>
             </div>
+            <!-- END SECTION FEATURES -->
+            <div id='inner2' style='z-index: 1'>
+                <h4 id="bottomcontent" style="color: white; padding-top: 500px; font-size:20px">
+                        LOCAL. REALTIME. CROWDSOURCED.
+                    </h4>
+            </div>
         </div>
-        <!-- SECTION CONTACT -->
-        <!-- END SOCIAL ICONS -->
-        <!-- SCRIPTS -->
-        <script>
-        function myHostel() {
-            document.getElementById("phoneimage").src = "images/hostel.png ";
-        }
-        </script>
-        <script>
-        function myMess() {
-            document.getElementById("phoneimage").src = "images/LAN.jpg";
-            $("#phoneimage").addClass("animated faceIn");
-            $("#phoneimage").removeClass("animated bounceInLeft");
-            bottomcontent.innerText = "Communicate \nwith people around you, including strangers, to get real time information about your surroundings";
-        }
-        </script>
-        <script>
-        function myDept() {
-            document.getElementById("phoneimage").src = "images/bus.jpg ";
-            $("#phoneimage").addClass("animated faceIn");
-            $("#phoneimage").removeClass("animated bounceInLeft");
-            bottomcontent.innerText = "Crowdsourced information about public transport and spaces";
-        }
-        </script>
-        <script>
-        function myReminder() {
-            document.getElementById("phoneimage").src = "images/reminders.jpg ";
-            $("#phoneimage").addClass("animated faceIn");
-            $("#phoneimage").removeClass("animated bounceInLeft");
-            // document.getElementById("bottomcontent").append('Now is the time for all good men...');
-            bottomcontent.innerText = "Remind yourself\nto buy stuff when you are around the store, to collect your things when you're around your friend's place";
-        }
-        </script>
-        <script>
-        function myNotice() {
-            document.getElementById("phoneimage").src = "images/announcement.jpg";
-            $("#phoneimage").addClass("animated faceIn");
-            $("#phoneimage").removeClass("animated bounceInLeft");
-            // document.getElementById("bottomcontent").append('Now is the time for all good men...');
-            bottomcontent.innerText = "Real time announcements\nfrom the events around you";
-        }
-        </script>
-        <!-- Mouse Exit Image Reset -->
-         <script>
-        function resetImage() {
-            document.getElementById("phoneimage").src = "images/splash.png";
-            $("#phoneimage").addClass("animated bounceInLeft");
-            // document.getElementById("bottomcontent").append('Now is the time for all good men...');
-            bottomcontent.innerText = "LOCAL. REALTIME. CROWDSOURCED.";
-        }
-        </script>
-        <!-- <script>
+    </div>
+    <!-- SECTION CONTACT -->
+    <!-- END SOCIAL ICONS -->
+    <!-- SCRIPTS -->
+    <script>
+    function myHostel() {
+        document.getElementById("phoneimage").src = "images/hostel.png ";
+    }
+    </script>
+    <script>
+    function myMess() {
+        document.getElementById("phoneimage").src = "images/LAN.jpg";
+        $("#phoneimage").addClass("animated faceIn");
+        $("#phoneimage").removeClass("animated bounceInLeft");
+        bottomcontent.innerText = "Communicate \nwith people around you, including strangers, to get real time information about your surroundings";
+    }
+    </script>
+    <script>
+    function myDept() {
+        document.getElementById("phoneimage").src = "images/bus.jpg ";
+        $("#phoneimage").addClass("animated faceIn");
+        $("#phoneimage").removeClass("animated bounceInLeft");
+        bottomcontent.innerText = "Crowdsourced information about public transport and spaces";
+    }
+    </script>
+    <script>
+    function myReminder() {
+        document.getElementById("phoneimage").src = "images/reminders.jpg ";
+        $("#phoneimage").addClass("animated faceIn");
+        $("#phoneimage").removeClass("animated bounceInLeft");
+        // document.getElementById("bottomcontent").append('Now is the time for all good men...');
+        bottomcontent.innerText = "Remind yourself\nto buy stuff when you are around the store, to collect your things when you're around your friend's place";
+    }
+    </script>
+    <script>
+    function myNotice() {
+        document.getElementById("phoneimage").src = "images/announcement.jpg";
+        $("#phoneimage").addClass("animated faceIn");
+        $("#phoneimage").removeClass("animated bounceInLeft");
+        // document.getElementById("bottomcontent").append('Now is the time for all good men...');
+        bottomcontent.innerText = "Real time announcements\nfrom the events around you";
+    }
+    </script>
+    <!-- Mouse Exit Image Reset -->
+    <script>
+    function resetImage() {
+        document.getElementById("phoneimage").src = "images/splash.png";
+        $("#phoneimage").addClass("animated bounceInLeft");
+        // document.getElementById("bottomcontent").append('Now is the time for all good men...');
+        bottomcontent.innerText = "LOCAL. REALTIME. CROWDSOURCED.";
+    }
+    </script>
+    <!-- <script>
     function myReminder() {
         document.getElementById("bottomcontent")= "yolo";
     }
     </script> -->
-        
-        <!-- End Custom -->
-        <script src="js/jquery.easings.min.js "></script>
-        <script src="js/jquery.fullPage.js "></script>
-        <script src="js/cbpFWTabs.js "></script>
-        <script src="js/jquery.sidr.min.js "></script>
-        <script src="js/scripts.js "></script>
-        <!--<script type="text/javascript " src="js/video.js "></script> -->
+    <!-- End Custom -->
+    <script src="js/jquery.easings.min.js "></script>
+    <script src="js/jquery.fullPage.js "></script>
+    <script src="js/cbpFWTabs.js "></script>
+    <script src="js/jquery.sidr.min.js "></script>
+    <script src="js/scripts.js "></script>
+    <script src="js/jquery.js "></script>
+    <script src="js/tooltipster.bundle.min.js"></script>
+    <!--<script type="text/javascript " src="js/video.js "></script> -->
 </body>
 
 </html>

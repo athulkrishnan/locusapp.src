@@ -19,6 +19,8 @@
     <link rel=stylesheet href=css/icomoon-soc-icons.css>
     <link rel=stylesheet href=css/maps.css>
     <link rel=stylesheet type=text/css href=css/animate.css>
+    <link rel="stylesheet" type="text/css" href="css/tooltipster.bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/tooltipster/dist/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-punk.min.css">
     <!-- JQUERY -->
     <script src=js/jquery.min.js></script>
 </head>
@@ -42,7 +44,7 @@
     <div id=fullpage>
         <!-- RIGHT HAND & PHONE MOCK-UP IMAGES -->
         <div class=wrap>
-            <div class=section-image> <img id=phoneimage src=images/splash.png alt=About> </div>
+            <div class=section-image> <img id=phoneimage src=images/splash.png> </div>
             <div id=hand>
                 <div>
                     <!--     <img src="images/08.jpg" alt="Contact"> --></div>
@@ -72,12 +74,12 @@
                             <!--In the original application, these points are injected with Javascript, but ideally, they'd be injected with a haml loop. Because I'm hardcoding content, I'm presenting this as prerendered HTML-->
                             <!-- <img src="http://www.brainpecks.com/wp-content/uploads/2014/02/loading-1.gif" class="map-point" style="top:25%;left:35%">  -->
                             <!-- image loader -->
-                            <!-- TARAMANI GH--><img src=images/preloader.gif style=top:50%;left:11.5%;width:28px;height:28px; class="map-point onehover Career " onmouseover=myDept() onmouseout=resetImage()>
-                            <!-- MANDAK HOSTEL --><img src=images/preloader.gif style=top:32%;left:56%;width:28px;height:28px; class="map-point onehover Career " onmouseover=myMess() onmouseout=resetImage()>
+                            <!-- TARAMANI GH--><img src=images/preloader.gif title="Crowdsourced information on public spaces and transport" style=top:50%;left:11.5%;width:28px;height:28px; class="tooltip map-point onehover Career " onmouseover=myDept() onmouseout=resetImage()>
+                            <!-- MANDAK HOSTEL --><img src=images/preloader.gif title="Communicate with people around you" style=top:32%;left:56%;width:28px;height:28px; class="tooltip map-point onehover Career " onmouseover=myMess() onmouseout=resetImage()>
                             <!-- image loader -->
-                            <!-- GURU --><img src=images/preloader.gif style=top:48%;left:28.3%;width:28px;height:28px; class="map-point onehover Career " onmouseover=myReminder() onmouseout=resetImage()>
+                            <!-- GURU --><img src=images/preloader.gif title="Location based reminders" style=top:48%;left:28.3%;width:28px;height:28px; class="tooltip map-point onehover Career " onmouseover=myReminder() onmouseout=resetImage()>
                             <!-- image loader -->
-                            <!-- SAC --><img src=images/preloader.gif style=top:15.7%;left:47.5%;width:28px;height:28px; class="map-point onehover Career " onmouseover=myNotice() onmouseout=resetImage()>
+                            <!-- SAC --><img src=images/preloader.gif title="Real time announcements from the events around you" style=top:15.7%;left:47.5%;width:28px;height:28px; class="tooltip map-point onehover Career " onmouseover=myNotice() onmouseout=resetImage()>
                             <!-- image loader -->
                             <!-- <img src="http://visual.ly/sites/all/themes/visually2/media/images/preloader.gif" style="top:-60%;left:10%;width:28px;height:28px;" class="map-point onehover Career " onmouseover="myHostel()"> -->
                             <!-- image loader -->
@@ -87,31 +89,27 @@
             </div>
             <!-- END SECTION FEATURES -->
             <div id=inner2 style="z-index: 1">
-                <h4 id=bottomcontent style="color: white; padding-top: 500px; font-size:20px"> LOCAL. REALTIME. CROWDSOURCED. </h4> </div>
+                <h4 class="tooltip" title="my tooltip" id=bottomcontent style="color: white; padding-top: 500px; font-size:20px"> LOCAL. REALTIME. CROWDSOURCED. </h4> </div>
         </div>
     </div>
     <!-- PRELOAD IMAGES -->
     <div style="display:none;">
-        <img src="images/LAN.jpg" alt="" >
-        <img src="images/bus.jpg" alt="" >
-        <img src="images/hostel.jpg" alt="" >
-        <img src="images/reminders.jpg" alt="" >
-        <img src="images/announcement.jpg" alt="" >
+        <img src="images/LAN.jpg" alt="">
+        <img src="images/bus.jpg" alt="">
+        <img src="images/hostel.jpg" alt="">
+        <img src="images/reminders.jpg" alt="">
+        <img src="images/announcement.jpg" alt="">
     </div>
     <!-- SECTION CONTACT -->
     <!-- END SOCIAL ICONS -->
     <!-- SCRIPTS -->
-    <script>
-    function myHostel() {
-        document.getElementById("phoneimage").src = "images/hostel.png ";
-    }
-    </script>
+    
     <script>
     function myMess() {
         document.getElementById("phoneimage").src = "images/LAN.jpg";
         $("#phoneimage").addClass("animated faceIn");
         $("#phoneimage").removeClass("animated bounceInLeft");
-        bottomcontent.innerText = "Communicate with people around you";
+        // bottomcontent.innerText = "Communicate with people around you";
         // ,\nincluding strangers, to get real time information about your surroundings
     }
     </script>
@@ -120,7 +118,7 @@
         document.getElementById("phoneimage").src = "images/bus.jpg ";
         $("#phoneimage").addClass("animated faceIn");
         $("#phoneimage").removeClass("animated bounceInLeft");
-        bottomcontent.innerText = "Crowdsourced information\non public spaces and transport";
+        // bottomcontent.innerText = "Crowdsourced information\non public spaces and transport";
     }
     </script>
     <script>
@@ -129,7 +127,7 @@
         $("#phoneimage").addClass("animated faceIn");
         $("#phoneimage").removeClass("animated bounceInLeft");
         // document.getElementById("bottomcontent").append('Now is the time for all good men...');
-        bottomcontent.innerText = "Location based reminders";
+        // bottomcontent.innerText = "Location based reminders";
     }
     </script>
     <script>
@@ -138,7 +136,7 @@
         $("#phoneimage").addClass("animated faceIn");
         $("#phoneimage").removeClass("animated bounceInLeft");
         // document.getElementById("bottomcontent").append('Now is the time for all good men...');
-        bottomcontent.innerText = "Real time announcements\nfrom the events around you";
+        // bottomcontent.innerText = "Real time announcements\nfrom the events around you";
     }
     </script>
     <!-- Mouse Exit Image Reset -->
@@ -156,11 +154,22 @@
     }
     </script> -->
     <!-- End Custom -->
+    <!-- tooltipster start -->
+    <script>
+    $(document).ready(function() {
+        $('.tooltip').tooltipster();
+        theme: 'tooltipster-punk';
+        trigger: 'hover'
+    });
+    </script>
+    <!-- tooltipster end -->
     <script src="js/jquery.easings.min.js "></script>
     <script src="js/jquery.fullPage.js "></script>
     <script src="js/cbpFWTabs.js "></script>
     <script src="js/jquery.sidr.min.js "></script>
     <script src="js/scripts.js "></script>
+    <script src="js/jquery.js "></script>
+    <script src="js/tooltipster.bundle.min.js"></script>
     <!--<script type="text/javascript " src="js/video.js "></script> -->
 </body>
 

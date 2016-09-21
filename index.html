@@ -152,11 +152,19 @@
     });
     </script>
     <!-- tooltipster end -->
+    <!-- Android Redirect -->
     <script type="text/javascript"> // <![CDATA[
         if ( (navigator.userAgent.indexOf('Android') != -1) ) {
-            document.location = "locusapp.xyz/old.index/";
+            document.location = "locusapp.xyz/m/";
         } // ]]>
     </script>
+    <!-- iOS Redirect -->
+    <script type="text/javascript">// <![CDATA[
+        if ((navigator.userAgent.indexOf('/iPhone/i') != -1) || (navigator.userAgent.indexOf('/iPod/i') != -1)) {
+            document.location = "locusapp.xyz/m/";
+        }
+    </script>
+    <!-- iOS Redirect End-->
     <script src="bower_components/vide/dist/jquery.vide.min.js"></script>
     <script src="js/jquery.easings.min.js "></script>
     <script src="js/jquery.fullPage.js "></script>

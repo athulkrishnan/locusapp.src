@@ -239,8 +239,8 @@ a:active {
     -webkit-transition-delay: 0.25s, 0.25s, 0.25s, 0.25s;
     -webkit-transition: opacity 0.25s ease-in-out 0.25s, width 0.25s ease-in-out 0.25s, height 0.25s ease-in-out 0.25s, z-index 0.25s ease-in-out 0.25s;
     transition: opacity 0.25s ease-in-out 0.25s, width 0.25s ease-in-out 0.25s, height 0.25s ease-in-out 0.25s, z-index 0.25s ease-in-out 0.25s;*/
-    background: rgba(26, 26, 26, 0.85);
-    border: 5px solid #7fcff7;
+    /*background: rgba(26, 26, 26, 0.85);*/
+    /*border: 5px solid #7fcff7;*/
 }
 
 .distribution-map .map-point .content {

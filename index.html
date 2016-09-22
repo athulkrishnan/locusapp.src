@@ -20,13 +20,13 @@
     <link rel=stylesheet href=css/maps.css>
     <link rel=stylesheet type=text/css href=css/animate.css>
     <link rel="stylesheet" type="text/css" href="css/tooltipster.bundle.min.css">
-    <link rel="stylesheet" type="text/css" href="bower_components/tooltipster/dist/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-punk.min.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/tooltipster/dist/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-borderless.min.css">
     <!-- JQUERY -->
     <script src=js/jquery.min.js></script>
 </head>
 
 <body>
-    <div class=fullscreen-bg  data-vide-bg="https://rawgit.com/athulkrishnan/athulkrishnan.github.io/master/webcon/insti.mp4" data-vide-options="loop: true, muted: false, position: 0% 0%">
+    <div class=fullscreen-bg data-vide-bg="https://rawgit.com/athulkrishnan/athulkrishnan.github.io/master/webcon/insti.mp4" data-vide-options="loop: true, muted: false, position: 0% 0%">
     </div>
     <!-- <div class=fullscreen-bg>
         <video loop muted autoplay poster=img/videoframe.jpg class=fullscreen-bg__video>
@@ -46,13 +46,12 @@
     <div id=fullpage>
         <!-- RIGHT HAND & PHONE MOCK-UP IMAGES -->
         <div class=wrap>
-            <div class=section-image > <img id=phoneimage src=images/splash-min.jpg> </div>
+            <div class=section-image> <img id=phoneimage src=images/splash-min.jpg> </div>
             <div id=hand>
                 <div>
                     <!--     <img src="images/08.jpg" alt="Contact"> --></div>
             </div>
         </div>
-
         <div id=outerDiv>
             <div id=inner1 style="z-index: 2">
                 <div class="section " id=section1 style="position: static;">
@@ -146,23 +145,31 @@
     <!-- tooltipster start -->
     <script>
     $(document).ready(function() {
-        $('.tooltip').tooltipster();
-        theme: 'tooltipster-punk';
+        $('.tooltip').tooltipster({
+        animation: 'grow',
+        theme: 'tooltipster-borderless',
         trigger: 'hover'
+        });
+        // $('.tooltip').tooltipster();
+        // theme: 'tooltipster-punk';
+        // animation: 'grow';
+        // trigger: 'hover'
     });
     </script>
     <!-- tooltipster end -->
     <!-- Android Redirect -->
-    <script type="text/javascript"> // <![CDATA[
-        if ( (navigator.userAgent.indexOf('Android') != -1) ) {
-            document.location = "/m/";
-        } // ]]>
+    <script type="text/javascript">
+    // <![CDATA[
+    if ((navigator.userAgent.indexOf('Android') != -1)) {
+        document.location = "/m/";
+    } // ]]>
     </script>
     <!-- iOS Redirect -->
-    <script type="text/javascript">// <![CDATA[
-        if ((navigator.userAgent.indexOf('/iPhone/i') != -1) || (navigator.userAgent.indexOf('/iPod/i') != -1)) {
-            document.location = "/m/";
-        }
+    <script type="text/javascript">
+    // <![CDATA[
+    if ((navigator.userAgent.indexOf('/iPhone/i') != -1) || (navigator.userAgent.indexOf('/iPod/i') != -1)) {
+        document.location = "/m/";
+    }
     </script>
     <!-- iOS Redirect End-->
     <script src="bower_components/vide/dist/jquery.vide.min.js"></script>

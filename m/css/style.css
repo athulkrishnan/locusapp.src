@@ -1,3 +1,20 @@
+.newFS {
+    font-size:20px !important;
+    line-height:20.026315789473683px !important;
+    color: black !important;
+    padding-bottom: 100px !important;
+    margin-bottom: 100px !important;
+}
+
+.elementTitle {
+    top: -25px !important;
+}
+
+.mycanvas {
+    width: 0px !important;
+    height:  0px !important;
+}
+
 /*
 * Wava Theme
 * Created by : mixdesigns

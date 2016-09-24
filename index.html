@@ -10,6 +10,20 @@
     <link rel="icon" href="images/favicon.ico">
     <!-- FAVICON -->
     <!-- <link rel="icon" href="images/favicon.ico"> -->
+    <!-- Android Redirect -->
+    <script type="text/javascript">
+    // <![CDATA[
+    if ((navigator.userAgent.indexOf('Android') != -1)) {
+        document.location = "/m/";
+    } // ]]>
+    </script>
+    <!-- iOS Redirect -->
+    <script type="text/javascript">
+    // <![CDATA[
+    if ((navigator.userAgent.indexOf('/iPhone/i') != -1) || (navigator.userAgent.indexOf('/iPod/i') != -1)) {
+        document.location = "/m/";
+    }
+    </script>
     <!-- WEB FONTS -->
     <link href=http://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600,700 rel=stylesheet type=text/css>
     <!-- STYLESHEETS -->
@@ -27,24 +41,25 @@
 </head>
 
 <body>
-<a class="typeform-share link" href="https://atk007.typeform.com/to/ZZqp4g" data-mode="1" target="_blank" style="float: right;">Careers</a><br>
-        <script>
-        (function() {
-            var qs, js, q, s, d = document,
-                gi = d.getElementById,
-                ce = d.createElement,
-                gt = d.getElementsByTagName,
-                id = 'typef_orm',
-                b = 'https://s3-eu-west-1.amazonaws.com/share.typeform.com/';
-            if (!gi.call(d, id)) {
-                js = ce.call(d, 'script');
-                js.id = id;
-                js.src = b + 'share.js';
-                q = gt.call(d, 'script')[0];
-                q.parentNode.insertBefore(js, q)
-            }
-        })()
-        </script>
+    <a class="typeform-share link" href="https://atk007.typeform.com/to/ZZqp4g" data-mode="1" target="_blank" style="float: right;">Careers</a>
+    <br>
+    <script>
+    (function() {
+        var qs, js, q, s, d = document,
+            gi = d.getElementById,
+            ce = d.createElement,
+            gt = d.getElementsByTagName,
+            id = 'typef_orm',
+            b = 'https://s3-eu-west-1.amazonaws.com/share.typeform.com/';
+        if (!gi.call(d, id)) {
+            js = ce.call(d, 'script');
+            js.id = id;
+            js.src = b + 'share.js';
+            q = gt.call(d, 'script')[0];
+            q.parentNode.insertBefore(js, q)
+        }
+    })()
+    </script>
     <div class=fullscreen-bg data-vide-bg="https://rawgit.com/athulkrishnan/athulkrishnan.github.io/master/webcon/insti.mp4" data-vide-options="loop: true, muted: false, position: 0% 0%">
     </div>
     <!-- <div class=fullscreen-bg>
@@ -55,7 +70,7 @@
     <link href=//fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700 rel=stylesheet type=text/css>
     <link href=//fonts.googleapis.com/css?family=Roboto:100 ,300,400,700,900 rel=stylesheet type=text/css>
     <h1 style="color: white; color: white;margin-bottom: 0px;margin-top: 0px; float: center; ">L O C U S</h1>
-    <p class=description style="margin-bottom: 20px; text-align: center; margin-bottom: 0px;margin-top: 0px;"" >Be Local Savvy</p>
+    <p class=description style="margin-bottom: 20px; text-align: center; margin-bottom: 0px;margin-top: 0px;" " >Be Local Savvy</p>
 
     <!-- END PAGE LOGO -->
     <!-- LANDING PAGE CONTENT -->
@@ -64,102 +79,101 @@
         <div class=wrap>
             <div class=section-image> <img id=phoneimage src=images/splash-min.jpg> </div>
             <!-- <div class=section-image> <img id=phoneimage src=images/splash-min-text.jpg> </div> -->
-            <div id="" class="section-image dotsnotification"> <p id="textpulse" style="text-align: center; position: absolute; bottom: 0px; width: 100%;" id="" class="helptext textpulse animated flash infinite">Hover over the blue dots<br> to explore</p></div>
-            <div id="helpertext" class=section-image></div>
+            <div id=" " class="section-image dotsnotification "> <p id="textpulse " style="text-align: center; position: absolute; bottom: 0px; width: 100%; " id=" " class="helptext textpulse animated flash infinite ">Hover over the blue dots<br> to explore</p></div>
+            <div id="helpertext " class=section-image></div>
             <div id=hand>
                 <div>
-                    <!--     <img src="images/08.jpg" alt="Contact"> --></div>
+                    <!--     <img src="images/08.jpg " alt="Contact "> --></div>
             </div>
         </div>
         <div id=outerDiv>
-            <div id=inner1 style="z-index: 2">
-                <div class="section " id=section1 style="position: static;">
+            <div id=inner1 style="z-index: 2 ">
+                <div class="section " id=section1 style="position: static; ">
                     <div class=wrap>
-                        <div class="distribution-map walking" style="padding-bottom: 200px;">
+                        <div class="distribution-map walking " style="padding-bottom: 200px; ">
                             <!-- This was broken for a while because imgur :( -->
                             <!-- I don't trust this host. Image here if it goes down: http://i.imgur.com/M7aUkuS.png -->
-                            <img src=images/map.png style="position: static; padding-bottom: 45px;">
+                            <img src=images/map.png style="position: static; padding-bottom: 45px; ">
                             <!--In the original application, these points are injected with Javascript, but ideally, they'd be injected with a haml loop. Because I'm hardcoding content, I'm presenting this as prerendered HTML-->
-                            <!-- <img src="http://www.brainpecks.com/wp-content/uploads/2014/02/loading-1.gif" class="map-point" style="top:25%;left:35%">  -->
+                            <!-- <img src="http://www.brainpecks.com/wp-content/uploads/2014/02/loading-1.gif " class="map-point " style="top:25%;left:35% ">  -->
                             <!-- image loader -->
-                            <!-- TARAMANI GH--><img src=images/preloader.gif title="Crowdsourced information on public spaces and transport" style=top:46.5%;left:11.5%;width:28px;height:28px; class="tooltip map-point onehover Career " onmouseover=myDept() onmouseout=resetImage()>
-                            <!-- MANDAK HOSTEL --><img src=images/preloader.gif title="Communicate with people around you" style=top:31%;left:56%;width:28px;height:28px; class="tooltip map-point onehover Career " onmouseover=myMess() onmouseout=resetImage()>
+                            <!-- TARAMANI GH--><img src=images/preloader.gif title="Crowdsourced information on public spaces and transport " style=top:46.5%;left:11.5%;width:28px;height:28px; class="tooltip map-point onehover Career " onmouseover=myDept() onmouseout=resetImage()>
+                            <!-- MANDAK HOSTEL --><img src=images/preloader.gif title="Communicate with people around you " style=top:31%;left:56%;width:28px;height:28px; class="tooltip map-point onehover Career " onmouseover=myMess() onmouseout=resetImage()>
                             <!-- image loader -->
-                            <!-- GURU --><img src=images/preloader.gif title="Location based reminders" style=top:44.5%;left:28.3%;width:28px;height:28px; class="tooltip map-point onehover Career " onmouseover=myReminder() onmouseout=resetImage()>
+                            <!-- GURU --><img src=images/preloader.gif title="Location based reminders " style=top:44.5%;left:28.3%;width:28px;height:28px; class="tooltip map-point onehover Career " onmouseover=myReminder() onmouseout=resetImage()>
                             <!-- image loader -->
-                            <!-- SAC --><img src=images/preloader.gif title="Real time announcements from events around you" style=top:14.7%;left:47.5%;width:28px;height:28px; class="tooltip map-point onehover Career " onmouseover=myNotice() onmouseout=resetImage()>
+                            <!-- SAC --><img src=images/preloader.gif title="Real time announcements from events around you " style=top:14.7%;left:47.5%;width:28px;height:28px; class="tooltip map-point onehover Career " onmouseover=myNotice() onmouseout=resetImage()>
                             <!-- image loader -->
-                            <!-- <img src="http://visual.ly/sites/all/themes/visually2/media/images/preloader.gif" style="top:-60%;left:10%;width:28px;height:28px;" class="map-point onehover Career " onmouseover="myHostel()"> -->
+                            <!-- <img src="http://visual.ly/sites/all/themes/visually2/media/images/preloader.gif " style="top:-60%;left:10%;width:28px;height:28px; " class="map-point onehover Career " onmouseover="myHostel() "> -->
                             <!-- image loader -->
                         </div>
                     </div>
                 </div>
             </div>
             <!-- END SECTION FEATURES -->
-            <div id=inner2 style="z-index: 1">
-                <h4 class="tooltip" title="my tooltip" id=bottomcontent style="color: white; padding-top: 500px; font-size:20px"> LOCAL. REALTIME. CROWDSOURCED. </h4> </div>
+            <div id=inner2 style="z-index: 1 ">
+                <h4 class="tooltip " title="my tooltip " id=bottomcontent style="color: white; padding-top: 500px; font-size:20px "> LOCAL. REALTIME. CROWDSOURCED. </h4> </div>
         </div>
     </div>
     <!-- PRELOAD IMAGES -->
-    <div style="display:none;">
-        <img src="images/LAN.jpg" alt="">
-        <img src="images/bus.jpg" alt="">
-        <img src="images/hostel.jpg" alt="">
-        <img src="images/reminders.jpg" alt="">
-        <img src="images/announcement.jpg" alt="">
+    <div style="display:none; ">
+        <img src="images/LAN.jpg " alt=" ">
+        <img src="images/bus.jpg " alt=" ">
+        <img src="images/hostel.jpg " alt=" ">
+        <img src="images/reminders.jpg " alt=" ">
+        <img src="images/announcement.jpg " alt=" ">
     </div>
     <!-- SECTION CONTACT -->
     <!-- END SOCIAL ICONS -->
     <!-- SCRIPTS -->
     <script>
     function myMess() {
-        document.getElementById("phoneimage").src = "images/nlan-min.jpg";
-        $("#textpulse").remove();
-        $("#phoneimage").addClass("animated faceIn");
-        $("#phoneimage").removeClass("animated bounceInLeft");
-        // bottomcontent.innerText = "Communicate with people around you";
+        document.getElementById("phoneimage ").src = "images/nlan-min.jpg ";
+        $("#textpulse ").remove();
+        $("#phoneimage ").addClass("animated faceIn ");
+        $("#phoneimage ").removeClass("animated bounceInLeft ");
+        // bottomcontent.innerText = "Communicate with people around you ";
         // ,\nincluding strangers, to get real time information about your surroundings
     }
     </script>
     <script>
     function myDept() {
-        document.getElementById("phoneimage").src = "images/nbus-min.jpg ";
-        $("#textpulse").remove();
-        $("#phoneimage").addClass("animated faceIn");
-        $("#phoneimage").removeClass("animated bounceInLeft");
-        // bottomcontent.innerText = "Crowdsourced information\non public spaces and transport";
+        document.getElementById("phoneimage ").src = "images/nbus-min.jpg ";
+        $("#textpulse ").remove();
+        $("#phoneimage ").addClass("animated faceIn ");
+        $("#phoneimage ").removeClass("animated bounceInLeft ");
+        // bottomcontent.innerText = "Crowdsourced information\non public spaces and transport ";
     }
     </script>
     <script>
     function myReminder() {
-        document.getElementById("phoneimage").src = "images/nreminders-min.jpg";
-        $("#textpulse").remove();
-        $("#phoneimage").addClass("animated faceIn");
-        $("#phoneimage").removeClass("animated bounceInLeft");
-        // document.getElementById("bottomcontent").append('Now is the time for all good men...');
-        // bottomcontent.innerText = "Location based reminders";
+        document.getElementById("phoneimage ").src = "images/nreminders-min.jpg ";
+        $("#textpulse ").remove();
+        $("#phoneimage ").addClass("animated faceIn ");
+        $("#phoneimage ").removeClass("animated bounceInLeft ");
+        // document.getElementById("bottomcontent ").append('Now is the time for all good men...');
+        // bottomcontent.innerText = "Location based reminders ";
     }
     </script>
     <script>
     function myNotice() {
-        document.getElementById("phoneimage").src = "images/nannouncements-min.jpg";
-        $("#textpulse").remove();
-        $("#phoneimage").addClass("animated faceIn");
-        $("#phoneimage").removeClass("animated bounceInLeft");
-        // document.getElementById("bottomcontent").append('Now is the time for all good men...');
-        // bottomcontent.innerText = "Real time announcements\nfrom the events around you";
+        document.getElementById("phoneimage ").src = "images/nannouncements-min.jpg ";
+        $("#textpulse ").remove();
+        $("#phoneimage ").addClass("animated faceIn ");
+        $("#phoneimage ").removeClass("animated bounceInLeft ");
+        // document.getElementById("bottomcontent ").append('Now is the time for all good men...');
+        // bottomcontent.innerText = "Real time announcements\nfrom the events around you ";
     }
     </script>
     <!-- Mouse Exit Image Reset -->
     <script>
     function resetImage() {
-        document.getElementById("phoneimage").src = "images/splash-min.jpg";
-        $("#phoneimage").addClass("animated bounceInLeft");
-        // $("textpulse").append("<p id="textpulse" style="text-align: center; position: absolute; bottom: 0px; width: 100%;" id="phoneimage" class="helptext animated flash infinite">Hover over the blue dots<br> to explore</p>")
-        // $( "<p id="textpulse" class="helptext animated pulse infinite">Hover over the blue dots<br> to explore </p>" ).appendTo( "helpertext" );
-        // document.getElementById("bottomcontent").append('Now is the time for all good men...');
-        // bottomcontent.innerText = "LOCAL. REALTIME. CROWDSOURCED.";
-    }
+        document.getElementById("phoneimage ").src = "images/splash-min.jpg ";
+        $("#phoneimage ").addClass("animated bounceInLeft ");
+        // $("textpulse ").append("<p id="textpulse" style="text-align: center; position: absolute; bottom: 0px; width: 100%;" id="phoneimage" class="helptext animated flash infinite">Hover over the blue dots
+        <br> to explore</p>") // $( "
+    <p id="textpulse" class="helptext animated pulse infinite">Hover over the blue dots
+        <br> to explore </p>" ).appendTo( "helpertext" ); // document.getElementById("bottomcontent").append('Now is the time for all good men...'); // bottomcontent.innerText = "LOCAL. REALTIME. CROWDSOURCED."; }
     </script>
     <!-- <script>
     function myReminder() {
@@ -183,19 +197,22 @@
     });
     </script>
     <!-- tooltipster end -->
-    <!-- Android Redirect -->
-    <script type="text/javascript">
-    // <![CDATA[
-    if ((navigator.userAgent.indexOf('Android') != -1)) {
-        document.location = "/m/";
-    } // ]]>
-    </script>
-    <!-- iOS Redirect -->
-    <script type="text/javascript">
-    // <![CDATA[
-    if ((navigator.userAgent.indexOf('/iPhone/i') != -1) || (navigator.userAgent.indexOf('/iPod/i') != -1)) {
-        document.location = "/m/";
-    }
+    <!-- GoogleAnalytics -->
+    <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-84640076-1', 'auto');
+    ga('send', 'pageview');
     </script>
     <!-- iOS Redirect End-->
     <script src="bower_components/vide/dist/jquery.vide.min.js"></script>

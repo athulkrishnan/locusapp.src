@@ -421,10 +421,9 @@ img:nth-child(5) {
 }
 
 
-.flash {
-  -webkit-animation: slideOutLeft 5s; /* Safari 4+ */
-  -moz-animation:    slideOutLeft 5s; /* Fx 5+ */
-  -o-animation:      slideOutLeft 5s; /* Opera 12+ */
-  animation:         slideOutLeft 5s; /* IE 10+, Fx 29+ */
+.textpulse {
+  -webkit-animation-duration: 12s;
+  animation-duration: 12s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
-

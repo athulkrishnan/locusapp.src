@@ -64,7 +64,8 @@
         <div class=wrap>
             <div class=section-image> <img id=phoneimage src=images/splash-min.jpg> </div>
             <!-- <div class=section-image> <img id=phoneimage src=images/splash-min-text.jpg> </div> -->
-            <div class=section-image> <p style="color:black;" id="textpulse" class="helptext animated pulse infinite">Hover over the blue dots<br> to explore</p></div>
+            <div class=section-image> <p id="textpulse" style="text-align: center; position: absolute; bottom: 0px; width: 100%;" id="phoneimage" class="helptext animated flash infinite">Hover over the blue dots<br> to explore</p></div>
+            <div id="helpertext" class=section-image></div>
             <div id=hand>
                 <div>
                     <!--     <img src="images/08.jpg" alt="Contact"> --></div>
@@ -81,7 +82,7 @@
                             <!--In the original application, these points are injected with Javascript, but ideally, they'd be injected with a haml loop. Because I'm hardcoding content, I'm presenting this as prerendered HTML-->
                             <!-- <img src="http://www.brainpecks.com/wp-content/uploads/2014/02/loading-1.gif" class="map-point" style="top:25%;left:35%">  -->
                             <!-- image loader -->
-                            <!-- TARAMANI GH--><img src=images/preloader.gif title="Crowdsourced information on public spaces and transport" style=top:50%;left:11.5%;width:28px;height:28px; class="tooltip map-point onehover Career " onmouseover=myDept() onmouseout=resetImage()>
+                            <!-- TARAMANI GH--><img src=images/preloader.gif title="Crowdsourced information on&#013; public spaces and transport" style=top:50%;left:11.5%;width:28px;height:28px; class="tooltip map-point onehover Career " onmouseover=myDept() onmouseout=resetImage()>
                             <!-- MANDAK HOSTEL --><img src=images/preloader.gif title="Communicate with people around you" style=top:32%;left:56%;width:28px;height:28px; class="tooltip map-point onehover Career " onmouseover=myMess() onmouseout=resetImage()>
                             <!-- image loader -->
                             <!-- GURU --><img src=images/preloader.gif title="Location based reminders" style=top:48%;left:28.3%;width:28px;height:28px; class="tooltip map-point onehover Career " onmouseover=myReminder() onmouseout=resetImage()>
@@ -154,7 +155,7 @@
     function resetImage() {
         document.getElementById("phoneimage").src = "images/splash-min.jpg";
         $("#phoneimage").addClass("animated bounceInLeft");
-        // $( "<div class=section-image> <p style="color:black;" id="textpulse" class="helptext animated pulse infinite">Hover over the blue dots<br> to explore</p></div>" ).appendTo( ".wrap" );
+        // $( "<p id="textpulse" class="helptext animated pulse infinite">Hover over the blue dots<br> to explore </p>" ).appendTo( "helpertext" );
         // document.getElementById("bottomcontent").append('Now is the time for all good men...');
         // bottomcontent.innerText = "LOCAL. REALTIME. CROWDSOURCED.";
     }
@@ -171,7 +172,8 @@
         $('.tooltip').tooltipster({
             animation: 'grow',
             theme: 'tooltipster-borderless',
-            trigger: 'hover'
+            trigger: 'hover',
+            maxWidth: 280
         });
         // $('.tooltip').tooltipster();
         // theme: 'tooltipster-punk';

@@ -63,7 +63,7 @@
         <div class=wrap>
             <div class=section-image> <img id=phoneimage src=images/splash-min.jpg> </div>
             <!-- <div class=section-image> <img id=phoneimage src=images/splash-min-text.jpg> </div> -->
-            <div class=section-image> <p id="textpulse" class="animated pulse infinite">Hover over the blue dots to explore</p></div>
+            <div class=section-image> <p style="color:black;" id="textpulse" class="helptext animated pulse infinite">Hover over the blue dots<br> to explore</p></div>
             <div id=hand>
                 <div>
                     <!--     <img src="images/08.jpg" alt="Contact"> --></div>
@@ -112,6 +112,7 @@
     <script>
     function myMess() {
         document.getElementById("phoneimage").src = "images/nlan-min.jpg";
+        $("#textpulse").remove();
         $("#phoneimage").addClass("animated faceIn");
         $("#phoneimage").removeClass("animated bounceInLeft");
         // bottomcontent.innerText = "Communicate with people around you";
@@ -121,6 +122,7 @@
     <script>
     function myDept() {
         document.getElementById("phoneimage").src = "images/nbus-min.jpg ";
+        $("#textpulse").remove();
         $("#phoneimage").addClass("animated faceIn");
         $("#phoneimage").removeClass("animated bounceInLeft");
         // bottomcontent.innerText = "Crowdsourced information\non public spaces and transport";
@@ -129,6 +131,7 @@
     <script>
     function myReminder() {
         document.getElementById("phoneimage").src = "images/nreminders-min.jpg";
+        $("#textpulse").remove();
         $("#phoneimage").addClass("animated faceIn");
         $("#phoneimage").removeClass("animated bounceInLeft");
         // document.getElementById("bottomcontent").append('Now is the time for all good men...');
@@ -138,6 +141,7 @@
     <script>
     function myNotice() {
         document.getElementById("phoneimage").src = "images/nannouncements-min.jpg";
+        $("#textpulse").remove();
         $("#phoneimage").addClass("animated faceIn");
         $("#phoneimage").removeClass("animated bounceInLeft");
         // document.getElementById("bottomcontent").append('Now is the time for all good men...');
@@ -149,6 +153,7 @@
     function resetImage() {
         document.getElementById("phoneimage").src = "images/splash-min.jpg";
         $("#phoneimage").addClass("animated bounceInLeft");
+        $( ".helptext" ).append( "<p>Test</p>" );
         // document.getElementById("bottomcontent").append('Now is the time for all good men...');
         // bottomcontent.innerText = "LOCAL. REALTIME. CROWDSOURCED.";
     }

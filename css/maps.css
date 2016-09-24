@@ -104,8 +104,9 @@ body {
 }
 
 .description {
-    max-width: 600px;
+    /*max-width: 600px;*/
     margin: 0 auto;
+    text-align: center;         
     color: rgba(229, 229, 229, 0.7);
 }
 
@@ -426,3 +427,4 @@ img:nth-child(5) {
   -o-animation:      slideOutLeft 5s; /* Opera 12+ */
   animation:         slideOutLeft 5s; /* IE 10+, Fx 29+ */
 }
+
